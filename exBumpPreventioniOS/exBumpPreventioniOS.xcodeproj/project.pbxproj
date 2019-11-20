@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		594D2A3C5498A17CBE66D57F /* Pods_exBumpPreventioniOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375A4024C33B49B627B30795 /* Pods_exBumpPreventioniOS.framework */; };
 		DD7B281923856FF90089BF97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B281823856FF90089BF97 /* AppDelegate.swift */; };
 		DD7B281B23856FF90089BF97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B281A23856FF90089BF97 /* SceneDelegate.swift */; };
-		DD7B281D23856FF90089BF97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B281C23856FF90089BF97 /* ViewController.swift */; };
 		DD7B282023856FF90089BF97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7B281E23856FF90089BF97 /* Main.storyboard */; };
 		DD7B282323856FF90089BF97 /* exBumpPreventioniOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD7B282123856FF90089BF97 /* exBumpPreventioniOS.xcdatamodeld */; };
 		DD7B282523856FFA0089BF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7B282423856FFA0089BF97 /* Assets.xcassets */; };
 		DD7B282823856FFA0089BF97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7B282623856FFA0089BF97 /* LaunchScreen.storyboard */; };
 		DD7B283323856FFA0089BF97 /* exBumpPreventioniOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B283223856FFA0089BF97 /* exBumpPreventioniOSTests.swift */; };
 		DD7B283E23856FFA0089BF97 /* exBumpPreventioniOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B283D23856FFA0089BF97 /* exBumpPreventioniOSUITests.swift */; };
+		DD7B284C2385729B0089BF97 /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B284B2385729B0089BF97 /* HostViewController.swift */; };
+		DD7B284E238572A60089BF97 /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B284D238572A60089BF97 /* InviteViewController.swift */; };
+		DD7B2850238572B30089BF97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B284F238572B30089BF97 /* MainViewController.swift */; };
+		DD7B2852238574950089BF97 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B2851238574950089BF97 /* ApiService.swift */; };
+		DD7B28552385763D0089BF97 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DD7B28542385763D0089BF97 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26EF2813A4BA7CECB3F72741 /* Pods-exBumpPreventioniOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exBumpPreventioniOS.release.xcconfig"; path = "Target Support Files/Pods-exBumpPreventioniOS/Pods-exBumpPreventioniOS.release.xcconfig"; sourceTree = "<group>"; };
+		375A4024C33B49B627B30795 /* Pods_exBumpPreventioniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_exBumpPreventioniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8C1CC886D1003917BB88A2 /* Pods-exBumpPreventioniOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exBumpPreventioniOS.debug.xcconfig"; path = "Target Support Files/Pods-exBumpPreventioniOS/Pods-exBumpPreventioniOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DD7B281523856FF90089BF97 /* exBumpPreventioniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exBumpPreventioniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7B281823856FF90089BF97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7B281A23856FF90089BF97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD7B281C23856FF90089BF97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD7B281F23856FF90089BF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD7B282223856FF90089BF97 /* exBumpPreventioniOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = exBumpPreventioniOS.xcdatamodel; sourceTree = "<group>"; };
 		DD7B282423856FFA0089BF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		DD7B283923856FFA0089BF97 /* exBumpPreventioniOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exBumpPreventioniOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7B283D23856FFA0089BF97 /* exBumpPreventioniOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exBumpPreventioniOSUITests.swift; sourceTree = "<group>"; };
 		DD7B283F23856FFA0089BF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7B284B2385729B0089BF97 /* HostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
+		DD7B284D238572A60089BF97 /* InviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
+		DD7B284F238572B30089BF97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DD7B2851238574950089BF97 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		DD7B28542385763D0089BF97 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594D2A3C5498A17CBE66D57F /* Pods_exBumpPreventioniOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +91,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185AED22721C5F357EAE4297 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				375A4024C33B49B627B30795 /* Pods_exBumpPreventioniOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FAD180A05EC47A1EBEE9BBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B8C1CC886D1003917BB88A2 /* Pods-exBumpPreventioniOS.debug.xcconfig */,
+				26EF2813A4BA7CECB3F72741 /* Pods-exBumpPreventioniOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD7B280C23856FF90089BF97 = {
 			isa = PBXGroup;
 			children = (
+				DD7B28542385763D0089BF97 /* .gitignore */,
 				DD7B281723856FF90089BF97 /* exBumpPreventioniOS */,
 				DD7B283123856FFA0089BF97 /* exBumpPreventioniOSTests */,
 				DD7B283C23856FFA0089BF97 /* exBumpPreventioniOSUITests */,
 				DD7B281623856FF90089BF97 /* Products */,
+				6FAD180A05EC47A1EBEE9BBF /* Pods */,
+				185AED22721C5F357EAE4297 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +136,9 @@
 			children = (
 				DD7B281823856FF90089BF97 /* AppDelegate.swift */,
 				DD7B281A23856FF90089BF97 /* SceneDelegate.swift */,
-				DD7B281C23856FF90089BF97 /* ViewController.swift */,
 				DD7B281E23856FF90089BF97 /* Main.storyboard */,
+				DD7B2851238574950089BF97 /* ApiService.swift */,
+				DD7B28532385749A0089BF97 /* ViewController */,
 				DD7B282423856FFA0089BF97 /* Assets.xcassets */,
 				DD7B282623856FFA0089BF97 /* LaunchScreen.storyboard */,
 				DD7B282923856FFA0089BF97 /* Info.plist */,
@@ -131,6 +165,16 @@
 			path = exBumpPreventioniOSUITests;
 			sourceTree = "<group>";
 		};
+		DD7B28532385749A0089BF97 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD7B284B2385729B0089BF97 /* HostViewController.swift */,
+				DD7B284D238572A60089BF97 /* InviteViewController.swift */,
+				DD7B284F238572B30089BF97 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD7B284223856FFA0089BF97 /* Build configuration list for PBXNativeTarget "exBumpPreventioniOS" */;
 			buildPhases = (
+				5C4BF6D7121D919F6230DBC4 /* [CP] Check Pods Manifest.lock */,
 				DD7B281123856FF90089BF97 /* Sources */,
 				DD7B281223856FF90089BF97 /* Frameworks */,
 				DD7B281323856FF90089BF97 /* Resources */,
+				7B3007ED32DF1068FFBB6212 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7B28552385763D0089BF97 /* .gitignore in Resources */,
 				DD7B282823856FFA0089BF97 /* LaunchScreen.storyboard in Resources */,
 				DD7B282523856FFA0089BF97 /* Assets.xcassets in Resources */,
 				DD7B282023856FF90089BF97 /* Main.storyboard in Resources */,
@@ -257,13 +304,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C4BF6D7121D919F6230DBC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-exBumpPreventioniOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B3007ED32DF1068FFBB6212 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-exBumpPreventioniOS/Pods-exBumpPreventioniOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-exBumpPreventioniOS/Pods-exBumpPreventioniOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-exBumpPreventioniOS/Pods-exBumpPreventioniOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD7B281123856FF90089BF97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7B2850238572B30089BF97 /* MainViewController.swift in Sources */,
 				DD7B282323856FF90089BF97 /* exBumpPreventioniOS.xcdatamodeld in Sources */,
-				DD7B281D23856FF90089BF97 /* ViewController.swift in Sources */,
+				DD7B2852238574950089BF97 /* ApiService.swift in Sources */,
+				DD7B284C2385729B0089BF97 /* HostViewController.swift in Sources */,
+				DD7B284E238572A60089BF97 /* InviteViewController.swift in Sources */,
 				DD7B281923856FF90089BF97 /* AppDelegate.swift in Sources */,
 				DD7B281B23856FF90089BF97 /* SceneDelegate.swift in Sources */,
 			);
@@ -436,6 +528,7 @@
 		};
 		DD7B284323856FFA0089BF97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8C1CC886D1003917BB88A2 /* Pods-exBumpPreventioniOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +547,7 @@
 		};
 		DD7B284423856FFA0089BF97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26EF2813A4BA7CECB3F72741 /* Pods-exBumpPreventioniOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
