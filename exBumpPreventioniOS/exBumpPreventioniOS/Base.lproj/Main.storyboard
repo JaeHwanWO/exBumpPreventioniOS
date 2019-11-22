@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exBumpPreventioniOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="exBumpPreventioniOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,15 +34,27 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWb-do-HVH">
+                                <rect key="frame" x="184" y="822" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapTestButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZO-We-rA7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="kWb-do-HVH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8w7-7p-Qdy"/>
                             <constraint firstItem="R1Q-fQ-0zV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G9q-pU-YP9"/>
                             <constraint firstItem="R1Q-fQ-0zV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JaH-dP-hYB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kWb-do-HVH" secondAttribute="bottom" constant="10" id="vOa-PM-fYS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="l07-87-QeP"/>
+                    <connections>
+                        <outlet property="testButton" destination="kWb-do-HVH" id="T0P-11-Lks"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

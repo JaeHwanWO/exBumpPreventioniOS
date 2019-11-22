@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		DD7B2850238572B30089BF97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B284F238572B30089BF97 /* MainViewController.swift */; };
 		DD7B2852238574950089BF97 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B2851238574950089BF97 /* ApiService.swift */; };
 		DD7B28552385763D0089BF97 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DD7B28542385763D0089BF97 /* .gitignore */; };
+		DDE8B0412387D90F0085E75C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DDE8B0402387D90F0085E75C /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				594D2A3C5498A17CBE66D57F /* Pods_exBumpPreventioniOS.framework in Frameworks */,
+				DDE8B0412387D90F0085E75C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,9 +170,9 @@
 		DD7B28532385749A0089BF97 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DD7B284F238572B30089BF97 /* MainViewController.swift */,
 				DD7B284B2385729B0089BF97 /* HostViewController.swift */,
 				DD7B284D238572A60089BF97 /* InviteViewController.swift */,
-				DD7B284F238572B30089BF97 /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -193,6 +195,9 @@
 			dependencies = (
 			);
 			name = exBumpPreventioniOS;
+			packageProductDependencies = (
+				DDE8B0402387D90F0085E75C /* Alamofire */,
+			);
 			productName = exBumpPreventioniOS;
 			productReference = DD7B281523856FF90089BF97 /* exBumpPreventioniOS.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +270,9 @@
 				Base,
 			);
 			mainGroup = DD7B280C23856FF90089BF97;
+			packageReferences = (
+				DDE8B03F2387D90F0085E75C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DD7B281623856FF90089BF97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -688,6 +696,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDE8B03F2387D90F0085E75C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDE8B0402387D90F0085E75C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDE8B03F2387D90F0085E75C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DD7B282123856FF90089BF97 /* exBumpPreventioniOS.xcdatamodeld */ = {
