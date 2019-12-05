@@ -50,7 +50,7 @@ class ApiService {
     }
   }
   
-  static func invite(myUUID:String, randomCode:String) {
+  static func invite(myUUID:String, randomCode:String, callback: (()->())?) {
     Alamofire.request(Router.invite(myUUID: myUUID, randomCode: randomCode)).responseJSON { (response) in
       
       guard let jsonData = response.result.value, response.result.isSuccess else {
@@ -58,18 +58,19 @@ class ApiService {
       }
       let json = JSON(jsonData)
       print(json)
+      callback?()
     }
   }
   
   static func updateGPS(myUUID: String, latitude: Float, longitude: Float){
     Alamofire.request(Router.updateGPS(myUUID: myUUID, latitude: latitude, longitude: longitude)).responseJSON { (response) in
-         
-         guard let jsonData = response.result.value, response.result.isSuccess else {
-           return
-         }
-         let json = JSON(jsonData)
-         print(json)
-       }
+      
+      guard let jsonData = response.result.value, response.result.isSuccess else {
+        return
+      }
+      let json = JSON(jsonData)
+      print(json)
+    }
   }
   
 }

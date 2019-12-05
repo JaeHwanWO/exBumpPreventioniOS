@@ -9,22 +9,31 @@
 import UIKit
 
 class HostViewController: UIViewController {
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    codeTextField.delegate = self
+  }
+  @IBOutlet weak var codeTextField: UITextField!
+  
+  @IBAction func didTapHostButton(_ sender: Any) {
+    ApiService.host(myUUID: UIDevice.current.identifierForVendor?.uuidString ?? "", callback: { (response) in
+      print(response)
+      self.codeTextField.text = response
+    })
+  }
+  
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+extension HostViewController: UITextFieldDelegate {
+  
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.view.endEditing(true)
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  }
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    return true
+  }
 }
